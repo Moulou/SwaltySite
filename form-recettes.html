@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+
+<body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-resource.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.min.js"></script>
+
+<script type="text/javascript" src="js/app.js"></script>
+
+<!-- Firebase -->
+<script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+
+<!-- AngularFire -->
+<script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
+
+
+<div ng-app="swalty">
+
+    <div ng-controller="AddRecetteController">
+
+    <form ng-submit="addRecette()">
+
+        <h2> AJOUTER UNE RECETTE </h2>
+
+            <input class="form-control" ng-model="titre" placeholder="titre" /> <br><br>
+            <input class="form-control" ng-model="description" placeholder="description" /> <br><br>
+            <input class="form-control" ng-model="difficulte" placeholder="difficulte" /> <br><br>
+            <input class="form-control" ng-model="temps" placeholder="temps" /> <br><br>
+            <input class="form-control" ng-model="nbPersonne" placeholder="nbPersonne" /> <br><br>
+
+            <br><br>
+            <button class="btn btn-success" type="submit">
+                Ajouter la recette
+            </button>
+    </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>

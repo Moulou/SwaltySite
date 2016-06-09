@@ -72,22 +72,49 @@ app.controller("AddRecetteController", function($scope, Recettes) {
         difficulte = this.difficulte;
         temps = this.temps;
         nbPersonne = this.nbPersonne;
+        typeRecette = this.typeRecette;
+        categRecette = this.categRecette;
+
         var ingredient = [
-            "fraise",
-            "farine"
+            ingredient1 = this.ingredient1,
+            ingredient2 = this.ingredient2,
+            ingredient3 = this.ingredient3,
+            ingredient4 = this.ingredient4,
+            ingredient5 = this.ingredient5,
+            ingredient6 = this.ingredient6,
+            ingredient7 = this.ingredient7,
+            ingredient8 = this.ingredient8,
+            ingredient9 = this.ingredient9,
+            ingredient10 = this.ingredient10
         ];
-        for (var i=0; i< ingredient.length; i++){
-            i = ingredient[i];
-        }
+
+        var etape = [
+            etape1 = this.etape1,
+            etape2 = this.etape2,
+            etape3 = this.etape3,
+            etape4 = this.etape4,
+            etape5 = this.etape5,
+            etape6 = this.etape6,
+            etape7 = this.etape7,
+            etape8 = this.etape8,
+            etape9 = this.etape9,
+            etape10 = this.etape10
+        ];
 
         $scope.recettes.$add({
+
             "titre": titre,
             "description": description,
             "difficulte": difficulte,
             "temps": temps,
             "nbPersonne": nbPersonne,
-            "ingredient": ingredient
+            "ingredient": ingredient,
+            "etape": etape,
+            "typeRecette": typeRecette,
+            "categRecette": categRecette
         });
+
+
     };
 });
 
@@ -111,3 +138,6 @@ app.controller("AddTitreController", function($scope, Titres) {
         });
     };
 });
+
+
+

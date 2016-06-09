@@ -23,7 +23,7 @@
 
 <div ng-app="swalty">
 
-    <div ng-controller="AddRecetteController">
+    <div class="container" ng-controller="AddRecetteController">
 
     <form ng-submit="addRecette()">
 
@@ -35,8 +35,35 @@
             <input class="form-control" ng-model="temps" placeholder="temps" /> <br><br>
             <input class="form-control" ng-model="nbPersonne" placeholder="nbPersonne" /> <br><br>
 
-            <br><br>
-            <button class="btn btn-success" type="submit">
+        <input class="form-control" ng-model="typeRecette" placeholder="type de la recette : sucre ou sel" /> <br><br>
+        <input class="form-control" ng-model="categRecette" placeholder="categorie de la recette : cookie, muffin, gaufre, cake, crepe, event" /> <br><br>
+
+        <input class="form-control" ng-model="ingredient1" placeholder="ingredient" /> <br><br>
+        <input class="form-control" ng-model="ingredient2" placeholder="ingredient" /> <br><br>
+        <input class="form-control" ng-model="ingredient3" placeholder="ingredient" /> <br><br>
+        <input class="form-control" ng-model="ingredient4" placeholder="ingredient" /> <br><br>
+        <input class="form-control" ng-model="ingredient5" placeholder="ingredient" /> <br><br>
+        <input class="form-control" ng-model="ingredient6" placeholder="ingredient" /> <br><br>
+        <input class="form-control" ng-model="ingredient7" placeholder="ingredient" /> <br><br>
+        <input class="form-control" ng-model="ingredient8" placeholder="ingredient" /> <br><br>
+        <input class="form-control" ng-model="ingredient9" placeholder="ingredient" /> <br><br>
+        <input class="form-control" ng-model="ingredient10" placeholder="ingredient" /> <br><br>
+
+        <input class="form-control" ng-model="etape1" placeholder="etape" /> <br><br>
+        <input class="form-control" ng-model="etape2" placeholder="etape" /> <br><br>
+        <input class="form-control" ng-model="etape3" placeholder="etape" /> <br><br>
+        <input class="form-control" ng-model="etape4" placeholder="etape" /> <br><br>
+        <input class="form-control" ng-model="etape5" placeholder="etape" /> <br><br>
+        <input class="form-control" ng-model="etape6" placeholder="etape" /> <br><br>
+        <input class="form-control" ng-model="etape7" placeholder="etape" /> <br><br>
+        <input class="form-control" ng-model="etape8" placeholder="etape" /> <br><br>
+        <input class="form-control" ng-model="etape9" placeholder="etape" /> <br><br>
+        <input class="form-control" ng-model="etape10" placeholder="etape" /> <br><br>
+
+        <!-- l'envoi de fichier ne fonctionne pas :'( -->
+            <input type="file" name="file" class="inputimg" id="nameImg" accept="image/*">
+
+            <button class="btn btn-success" type="submit" ng-submit="uploadFile()">
                 Ajouter la recette
             </button>
     </form>

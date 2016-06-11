@@ -1,5 +1,113 @@
+@font-face {
+  src: url('../fonts/champagne__limousines-webfont.woff');
+
+}
+
+body{
+  font-family: "Champagne & Limousines";
+
+}
+
+
+h2,  p{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
+a{
+  text-decoration: none;
+}
+#header{
+  background-image: url('../images/bg2.jpg');
+}
+
+#header a{
+  text-decoration: none;
+}
+
+#header p{
+  color : white;
+}
+
+#header h1{
+  font-size: 5em;
+}
+
+
+.logo{
+  width: 10%;
+}
+.content p{
+  font-size: 1.3em;
+  color : #cfcfcf;
+}
+
+.sucre{
+  color: #ff6b6b;
+}
+.sel{
+  color :   #675959;
+}
+
+
+.bg{
+  background-image: url('../images/bg3.jpg');
+  background-size: cover;
+}
+
+.image-bg{
+  -webkit-box-shadow: 4px 4px 0 8px #c7f464;
+  -moz-box-shadow: 4px 4px 0 8px #c7f464;
+  box-shadow: 4px 4px 0 8px #c7f464;
+  overflow: hidden;
+
+
+}
+
+.image-bg-sucre{
+  -webkit-box-shadow: 4px 4px 0 8px #ff6b6b;
+  -moz-box-shadow: 4px 4px 0 8px #ff6b6b;
+  box-shadow: 4px 4px 0 8px #ff6b6b;
+  overflow: hidden;
+
+
+}
+.image-wrap img { width: 25%;}
+
+.wrapper{
+  color: white !important;
+}
+
+.wrapper p{
+  color: #675959;
+  font-size: 1.3em;
+}
+
+.wrapper a{
+  text-decoration: none;
+}
+
+/*BOUTON*/
+.btn-dw{
+  background-color:#ff6b6b !important;
+  color: white !important;
+}
+
+.btn-more{
+
+  background-color:#c7f464 !important;
+  color: #675959 !important;
+}
+
+
+/*FOOTER*/
+
+#footer a{
+  text-decoration: none;
+}
 #footer a:hover{
   color :#ff6b6b;
 
 
 }
+

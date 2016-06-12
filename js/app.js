@@ -151,12 +151,20 @@ app.controller("AddTitreController", function($scope, Titres) {
     $scope.titres = Titres;
 
     $scope.addTitre = function() {
-        nomTitre = this.nomTitre;
+
+        nom = this.nom;
+        categorie = this.categorie;
+        score = this.score;
+
 
         $scope.titres.$add({
-            "nomTitre": nomTitre
+            "nom": nom,
+            "categorie": categorie,
+            "score": score
         });
+
     };
+
 });
 
 

@@ -93,9 +93,6 @@ app.controller("AddRecetteController", function($scope, Recettes) {
                     ingredient14 = this.ingredient14
                 ];
 
-                if(ingredient == 'undefined'){
-                  ingredient = null;
-                }
 
                 var etape = [
                     etape1 = this.etape1,
@@ -114,9 +111,15 @@ app.controller("AddRecetteController", function($scope, Recettes) {
                     etape14 = this.etape14
                 ];
 
-                if(etape == 'undefined'){
-                    etape = null;
-                }
+
+        if(ingredient == 'undefined'){
+            ingredient = null;
+        }
+
+
+        if(etape == 'undefined'){
+            etape = null;
+        }
 
         $scope.recettes.$add({
                     "titre": titre,
@@ -129,6 +132,7 @@ app.controller("AddRecetteController", function($scope, Recettes) {
                     "typeRecette": typeRecette,
                     "categRecette": categRecette
                 });
+
 
             };
         });
